@@ -29,5 +29,5 @@ function playNote(key) {
   key.classList.add('active');
   setTimeout(() => {
     key.classList.remove('active')
-  }, 700);
+  }, 500);
 }

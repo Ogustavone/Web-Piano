@@ -98,11 +98,14 @@ body {
   color: white;
 }
 
-@media (max-width: 1094px) {
-  .white {
-    width: 70px;
+@media (max-width: 1024px) {
+  .piano {
+    transform: scale(0.9)
   }
-  .black {
-    width: 50px;
+}
+
+@media (max-width: 768px) {
+  .piano {
+    transform: scale(0.7);
   }
 }

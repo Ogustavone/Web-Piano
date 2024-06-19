@@ -4,6 +4,8 @@
 
   --white-key-color: white;
   --white-key-hover: linear-gradient(#ffffff, #ccc6c6);
+
+  --key-size: 400px;
 }
 
 * {
@@ -41,7 +43,7 @@ body {
 }
 
 .key {
-  height:35vh;
+  height:var(--key-size);
   display: grid;
   border-left: 1px solid rgba(0, 0, 0, 0.397);
 }
@@ -66,7 +68,7 @@ body {
 
 .black {
   background: var(--black-key-color);
-  width: 60px; height: calc(35vh/1.5);
+  width: 60px; height: calc(var(--key-size)/1.5);
   border-radius: 0 0 12px 12px;
   
   margin-left: -30px;

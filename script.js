@@ -24,10 +24,10 @@ document.addEventListener('keydown', e => {
 function playNote(key) {
   console.log(`Nota tocada: ${key.dataset.note}`)
   const noteAudio = document.getElementById(key.dataset.note);
-  noteAudio.currentTime = 0;
+  noteAudio.currentTime = 0.05;
   noteAudio.play();
   key.classList.add('active');
   setTimeout(() => {
     key.classList.remove('active')
-  }, 500);
+  }, 400);
 }
